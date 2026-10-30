@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Aarav Mehta — Dermatology &amp; Aesthetic Medicine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f3ec;--bg2:#efe8dc;--ink:#0d2230;--mute:#51606b;--card:#ffffff;--line:rgba(13,34,48,.12);--teal:#0f6b6b;--gold:#b88a3e;--hero:#0b1f2a;--heroink:#f7f3ec;
+--serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1a23;--bg2:#0e222d;--ink:#f1ece2;--mute:#9db0ba;--card:#112a36;--line:rgba(241,236,226,.14);--teal:#4fc3b8;--gold:#d8ab5e;--hero:#06131a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1a23;--bg2:#0e222d;--ink:#f1ece2;--mute:#9db0ba;--card:#112a36;--line:rgba(241,236,226,.14);--teal:#4fc3b8;--gold:#d8ab5e;--hero:#06131a;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero);z-index:60}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+section{padding:clamp(72px,11vw,130px) 0}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:18px;display:block}
+h2{font-size:clamp(2rem,5vw,3.4rem);max-width:18ch}
+.lead{color:var(--mute);max-width:56ch;margin-top:18px}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background .4s,backdrop-filter .4s}
+nav.s{background:color-mix(in srgb,var(--hero) 82%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.nb{display:flex;align-items:center;justify-content:space-between;height:68px;color:#f7f3ec}
+.logo{font-family:var(--serif);font-size:1.2rem}.logo b{color:#d8ab5e;font-weight:400}
+.links{display:flex;gap:30px;align-items:center;font-size:.9rem}
+.links a:not(.btn){opacity:.8;transition:opacity .3s}.links a:not(.btn):hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:99px;font-weight:600;font-size:.92rem;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .3s}
+.btn.g{background:linear-gradient(135deg,#d8ab5e,#b88a3e);color:#1a1405;box-shadow:0 10px 30px -10px rgba(216,171,94,.7)}
+.btn.g:hover{transform:translateY(-3px);box-shadow:0 18px 36px -10px rgba(216,171,94,.8)}
+.btn.o{border-color:rgba(247,243,236,.35);color:#f7f3ec}.btn.o:hover{background:rgba(247,243,236,.1)}
+#tg{background:none;border:1px solid rgba(247,243,236,.3);color:#f7f3ec;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1rem}
+.hero{background:var(--hero);color:var(--heroink);min-height:100vh;min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 80px}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:fl 14s ease-in-out infinite}
+.o1{width:520px;height:520px;background:#0f6b6b;right:-120px;top:-100px}.o2{width:380px;height:380px;background:#b88a3e;left:-120px;bottom:-120px;opacity:.28;animation-delay:-6s}
+@keyframes fl{50%{transform:translate(40px,30px) scale(1.12)}}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,6vw,80px);align-items:center;position:relative}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);letter-spacing:-.02em}.hero h1 em{color:#d8ab5e;font-style:italic}
+.hero p{max-width:50ch;opacity:.78;margin:26px 0 38px;font-size:1.05rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.pt{aspect-ratio:4/5;border-radius:200px 200px 28px 28px;background:linear-gradient(160deg,#16414a,#0b1f2a);border:1px solid rgba(216,171,94,.4);position:relative;display:grid;place-items:center;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.pt svg{width:62%;opacity:.9}
+.chip{position:absolute;background:rgba(247,243,236,.1);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(247,243,236,.2);border-radius:16px;padding:12px 16px;font-size:.8rem;animation:fl 9s ease-in-out infinite}
+.chip b{display:block;font-family:var(--serif);font-size:1.4rem;color:#d8ab5e;font-weight:400}
+.c1{left:-26px;bottom:18%}.c2{right:-14px;top:14%;animation-delay:-4s}
+.bar{background:var(--bg2);border-block:1px solid var(--line);padding:34px 0}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.st b{font-family:var(--serif);font-size:clamp(2rem,4.4vw,3rem);font-weight:400;display:block}
+.st span{font-size:.82rem;color:var(--mute)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:34px 28px;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s,border-color .4s}
+.card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -28px rgba(13,34,48,.35);border-color:var(--gold)}
+.ic{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--teal),#0b3d4a);color:#fff;font-size:1.3rem;margin-bottom:22px}
+.card h3{font-size:1.45rem;margin-bottom:10px}.card p{color:var(--mute);margin:0;font-size:.95rem}
+.alt{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:54px;counter-reset:s}
+.step{border-top:1px solid var(--gold);padding-top:22px}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:2.6rem;color:var(--gold);display:block}
+.step h3{font-size:1.3rem;margin:8px 0}.step p{color:var(--mute);font-size:.92rem;margin:0}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px}
+.t{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px}
+.t p{font-family:var(--serif);font-size:1.15rem;line-height:1.5;margin:0 0 22px}
+.t small{color:var(--mute)}.t i{color:var(--gold);font-style:normal;letter-spacing:3px;display:block;margin-bottom:14px}
+details{border-bottom:1px solid var(--line);padding:22px 0;max-width:780px}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.25rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--gold);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}details p{color:var(--mute);margin:14px 0 0}
+.book{background:var(--hero);color:var(--heroink);position:relative;overflow:hidden}
+.bg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center;position:relative}
+.book .lead{color:rgba(247,243,236,.7)}
+form{background:rgba(247,243,236,.07);border:1px solid rgba(247,243,236,.16);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:28px;padding:clamp(22px,4vw,38px);display:grid;gap:14px}
+input,select{width:100%;padding:15px 18px;border-radius:14px;border:1px solid rgba(247,243,236,.2);background:rgba(247,243,236,.06);color:#f7f3ec;font:inherit;font-size:16px}
+select option{color:#0d2230}input::placeholder{color:rgba(247,243,236,.5)}
+input:focus,select:focus{outline:2px solid #d8ab5e;outline-offset:1px}
+#ok{display:none;text-align:center;padding:12px;color:#d8ab5e;font-family:var(--serif);font-size:1.2rem}
+footer{padding:44px 0;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line)}
+.fr{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 12px 30px -8px rgba(37,211,102,.7);animation:pl 2.6s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%,100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+@media (max-width:900px){.hg,.bg{grid-template-columns:1fr}.pt{max-width:340px;margin:0 auto;order:-1}.grid3,.tg{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.st{grid-template-columns:1fr 1fr;row-gap:30px}.links a:not(.btn){display:none}.c1{left:-6px}.c2{right:-6px}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}.links .btn{padding:11px 18px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav id="nv"><div class="wrap nb"><a class="logo" href="#top">Dr. Aarav <b>Mehta</b></a>
+<div class="links"><a href="#about">About</a><a href="#care">Treatments</a><a href="#journey">Journey</a><a href="#faq">FAQ</a><button id="tg" aria-label="Toggle theme">◐</button><a class="btn g" href="#book">Book Consultation</a></div></div></nav>
+
+<header class="hero" id="top"><div class="orb o1"></div><div class="orb o2"></div>
+<div class="wrap hg"><div>
+<span class="eyebrow rv">Dermatology &amp; Aesthetic Medicine</span>
+<h1 class="rv d1">Skin science,<br>delivered with <em>true care.</em></h1>
+<p class="rv d2">Evidence-based, deeply personal treatment for patients across the world — in clinic or from the comfort of your home through secure video consultation.</p>
+<div class="cta rv d3"><a class="btn g" href="#book">Book Consultation →</a><a class="btn o" href="#care">Explore Treatments</a></div></div>
+<div class="pt rv d2"><svg viewBox="0 0 120 140" fill="none" stroke="#d8ab5e" stroke-width="1.4"><circle cx="60" cy="42" r="24"/><path d="M12 138c0-34 22-54 48-54s48 20 48 54"/><path d="M60 92v22M50 103h20" stroke-linecap="round"/></svg>
+<div class="chip c1"><b>18+ yrs</b>clinical experience</div><div class="chip c2"><b>40+</b>countries served</div></div></div></header>
+
+<div class="bar"><div class="wrap st">
+<div class="rv"><b data-n="18">0</b><span>Years of practice</span></div>
+<div class="rv d1"><b data-n="12000">0</b><span>Patients treated</span></div>
+<div class="rv d2"><b data-n="40">0</b><span>Countries</span></div>
+<div class="rv d3"><b data-n="25">0</b><span>Research publications</span></div></div></div>
+
+<section id="about"><div class="wrap"><span class="eyebrow rv">About the Doctor</span>
+<h2 class="rv d1">Medicine that listens first.</h2>
+<p class="lead rv d2">Dr. Aarav Mehta is a board-certified dermatologist trained in India and the United Kingdom. His philosophy is simple: understand the person, diagnose with precision, treat with the gentlest effective approach — and never promise what science cannot deliver.</p></div></section>
+
+<section class="alt" id="care"><div class="wrap"><span class="eyebrow rv">Treatments</span><h2 class="rv d1">Expertise across every concern.</h2>
+<div class="grid3">
+<div class="card rv"><div class="ic">✦</div><h3>Acne &amp; Scar Therapy</h3><p>Customised protocols that clear active acne and refine texture, with visible, lasting results.</p></div>
+<div class="card rv d1"><div class="ic">◈</div><h3>Advanced Skin Rejuvenation</h3><p>Laser, peels and regenerative therapies for glow, firmness and an naturally youthful look.</p></div>
+<div class="card rv d2"><div class="ic">❋</div><h3>Hair Restoration</h3><p>Accurate diagnosis and medical-grade treatment plans for hair fall and thinning.</p></div>
+<div class="card rv"><div class="ic">◉</div><h3>Pigmentation &amp; Melasma</h3><p>Targeted, safe correction for uneven tone, sun damage and stubborn pigmentation.</p></div>
+<div class="card rv d1"><div class="ic">✚</div><h3>Medical Dermatology</h3><p>Eczema, psoriasis, rosacea and chronic conditions managed with long-term care.</p></div>
+<div class="card rv d2"><div class="ic">☍</div><h3>Online Consultation</h3><p>Secure video visits with a clear plan, prescriptions and follow-ups — from anywhere.</p></div>
+</div></div></section>
+
+<section id="journey"><div class="wrap"><span class="eyebrow rv">Your Journey</span><h2 class="rv d1">Simple, clear, personal.</h2>
+<div class="steps">
+<div class="step rv"><h3>Consult</h3><p>Share your history and goals in a relaxed, unhurried session.</p></div>
+<div class="step rv d1"><h3>Diagnose</h3><p>Precise skin analysis to find the real cause, not just the symptom.</p></div>
+<div class="step rv d2"><h3>Treat</h3><p>A tailored plan using proven, safe and modern techniques.</p></div>
+<div class="step rv d3"><h3>Follow-up</h3><p>Ongoing support so your results last and your confidence grows.</p></div></div></div></section>
+
+<section class="alt"><div class="wrap"><span class="eyebrow rv">Patient Stories</span><h2 class="rv d1">Trusted around the world.</h2>
+<div class="tg">
+<div class="t rv"><i>★★★★★</i><p>“After years of struggling, my skin has never looked better. His care felt completely personal.”</p><small>Sarah L. — London, UK</small></div>
+<div class="t rv d1"><i>★★★★★</i><p>“The video consultation was seamless. Clear plan, real results, zero pressure.”</p><small>Omar K. — Dubai, UAE</small></div>
+<div class="t rv d2"><i>★★★★★</i><p>“Honest, brilliant and kind. I flew in for treatment and it was worth every mile.”</p><small>Emily R. — Toronto, Canada</small></div></div></div></section>
+
+<section id="faq"><div class="wrap"><span class="eyebrow rv">FAQ</span><h2 class="rv d1">Good questions, honest answers.</h2><div style="margin-top:40px" class="rv d2">
+<details><summary>Can I consult from another country?</summary><p>Yes. Secure video consultations are available worldwide, with time-zone friendly scheduling.</p></details>
+<details><summary>How soon will I see results?</summary><p>It depends on the concern. You will receive a realistic timeline at your first consultation.</p></details>
+<details><summary>Is my medical information private?</summary><p>Absolutely. All data is handled under strict, privacy-first standards.</p></details></div></div></section>
+
+<section class="book" id="book"><div class="orb o1" style="opacity:.3"></div><div class="wrap bg"><div>
+<span class="eyebrow rv">Book Consultation</span><h2 class="rv d1">Your best skin starts with one conversation.</h2>
+<p class="lead rv d2">Choose a time that suits your time zone. Confirmation arrives within hours.</p></div>
+<form id="f" class="rv d2"><input required placeholder="Full name" autocomplete="name"><input required type="email" placeholder="Email address" autocomplete="email">
+<select aria-label="Type"><option>Video consultation</option><option>In-clinic visit</option></select>
+<input type="date" aria-label="Preferred date">
+<button class="btn g" type="submit" style="justify-content:center">Request Appointment</button>
+<div id="ok">Thank you — we’ll be in touch shortly.</div></form></div></section>
+
+<footer><div class="wrap fr"><span>© 2026 Dr. Aarav Mehta · Dermatology &amp; Aesthetic Medicine</span><span>Sample demo design. Individual results may vary.</span></div></footer>
+<a class="wa" href="#book" aria-label="Chat">💬</a>
+
+<script>
+(function(){
+var nv=document.getElementById('nv');
+function sc(){nv.classList.toggle('s',window.scrollY>30)}
+window.addEventListener('scroll',sc,{passive:true});sc();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var t=+e.target.dataset.n,s=null;
+function st(ts){if(!s)s=ts;var p=Math.min((ts-s)/1800,1),v=Math.floor(t*(1-Math.pow(1-p,3)));e.target.textContent=v.toLocaleString('en-US')+(p===1?'+':'');if(p<1)requestAnimationFrame(st)}
+requestAnimationFrame(st)})},{threshold:.5});
+document.querySelectorAll('[data-n]').forEach(function(el){co.observe(el)});
+document.getElementById('tg').onclick=function(){var r=document.documentElement,d=r.getAttribute('data-theme');
+var dark=d?d==='dark':window.matchMedia('(prefers-color-scheme:dark)').matches;r.setAttribute('data-theme',dark?'light':'dark')};
+document.getElementById('f').onsubmit=function(e){e.preventDefault();document.getElementById('ok').style.display='block';this.reset()};
+})();
+</script>
+</body>
+</html>
